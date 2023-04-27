@@ -82,4 +82,11 @@
 
 .liner-section > div > h4 {
   width: 52px;
+  text-align: center;
+}
+
+/* CLUBS */
+
+.clubs {
+  width: 100%;
 }
