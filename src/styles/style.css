@@ -43,7 +43,7 @@
   margin-left: 16px;
 }
 
-.header__info > h2 {
+.title {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -57,4 +57,29 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--helper-color);
+}
+
+/* LINER SECTION */
+
+.liner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 11px;
+  padding: 0 25px;
+
+  width: 100%;
+  height: 40px;
+
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.liner-section > div {
+  display: flex;
+}
+
+.liner-section > div > h4 {
+  width: 52px;
 }
