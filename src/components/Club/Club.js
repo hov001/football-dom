@@ -1,7 +1,8 @@
 import { createElement } from "../../helpers/createElement.js";
 import ClubInfo from "./ClubInfo.js";
 
-export default function Club({ clubData }) {
+export default function Club({ clubData, position }) {
+  const { name, image, stats } = clubData;
   /*
   
   <div class="club">
@@ -27,13 +28,13 @@ export default function Club({ clubData }) {
   const ClubTitle = createElement(
     "h4",
     { class: "club__content" },
-    clubData?.position ?? "-"
+    position ?? "-"
   );
 
   return createElement(
     "div",
     { class: "club" },
     ClubTitle,
-    ClubInfo({ name: "Arsenal", image: "ARS" })
+    ClubInfo({ name, image })
   );
 }

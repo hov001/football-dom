@@ -5,13 +5,15 @@ import TableHeader from "../TableHeader/TableHeader.js";
 import TableLiner from "../TableLiner/TableLiner.js";
 
 export default function Table() {
-  console.log(getTable());
+  const ClubsNodes = getTable().map((clubData, idx) =>
+    Club({ clubData, position: idx + 1 })
+  );
 
   return createElement(
     "section",
     { class: "table" },
     TableHeader(),
     TableLiner(),
-    createElement("div", { class: "clubs" }, Club({}))
+    createElement("div", { class: "clubs" }, ...ClubsNodes)
   );
 }
