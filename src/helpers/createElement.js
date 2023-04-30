@@ -11,13 +11,3 @@ export function createElement(tagName, props = {}, ...children) {
 
   return tag;
 }
-
-/*
-
-{
-  class: 'table',
-  alt: 'data',
-  
-}
-
-*/
